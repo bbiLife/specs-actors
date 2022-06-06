@@ -1,8 +1,7 @@
 package proof
 
 import (
-	proof0 "github.com/filecoin-project/specs-actors/actors/runtime/proof"
-	proof5 "github.com/filecoin-project/specs-actors/v5/actors/runtime/proof"
+	"github.com/filecoin-project/go-state-types/proof"
 )
 
 ///
@@ -22,11 +21,11 @@ import (
 //	SealedCID   cid.Cid `checked:"true"` // CommR
 //	UnsealedCID cid.Cid `checked:"true"` // CommD
 //}
-type SealVerifyInfo = proof0.SealVerifyInfo
+type SealVerifyInfo = proof.SealVerifyInfo
 
-type AggregateSealVerifyInfo = proof5.AggregateSealVerifyInfo
+type AggregateSealVerifyInfo = proof.AggregateSealVerifyInfo
 
-type AggregateSealVerifyProofAndInfos = proof5.AggregateSealVerifyProofAndInfos
+type AggregateSealVerifyProofAndInfos = proof.AggregateSealVerifyProofAndInfos
 
 ///
 /// PoSting
@@ -38,13 +37,13 @@ type AggregateSealVerifyProofAndInfos = proof5.AggregateSealVerifyProofAndInfos
 //	SectorNumber abi.SectorNumber
 //	SealedCID    cid.Cid // CommR
 //}
-type SectorInfo = proof0.SectorInfo
+type SectorInfo = proof.SectorInfo
 
 //type PoStProof struct {
 //	PoStProof  abi.RegisteredPoStProof
 //	ProofBytes []byte
 //}
-type PoStProof = proof0.PoStProof
+type PoStProof = proof.PoStProof
 
 // Information needed to verify a Winning PoSt attached to a block header.
 // Note: this is not used within the state machine, but by the consensus/election mechanisms.
@@ -54,7 +53,7 @@ type PoStProof = proof0.PoStProof
 //	ChallengedSectors []SectorInfo
 //	Prover            abi.ActorID // used to derive 32-byte prover ID
 //}
-type WinningPoStVerifyInfo = proof0.WinningPoStVerifyInfo
+type WinningPoStVerifyInfo = proof.WinningPoStVerifyInfo
 
 // Information needed to verify a Window PoSt submitted directly to a miner actor.
 //type WindowPoStVerifyInfo struct {
@@ -63,4 +62,4 @@ type WinningPoStVerifyInfo = proof0.WinningPoStVerifyInfo
 //	ChallengedSectors []SectorInfo
 //	Prover            abi.ActorID // used to derive 32-byte prover ID
 //}
-type WindowPoStVerifyInfo = proof0.WindowPoStVerifyInfo
+type WindowPoStVerifyInfo = proof.WindowPoStVerifyInfo

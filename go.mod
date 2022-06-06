@@ -5,9 +5,9 @@ go 1.17
 require (
 	github.com/filecoin-project/go-address v0.0.5
 	github.com/filecoin-project/go-amt-ipld/v3 v3.1.0
-	github.com/filecoin-project/go-bitfield v0.2.3
+	github.com/filecoin-project/go-bitfield v0.2.4
 	github.com/filecoin-project/go-hamt-ipld/v3 v3.1.0
-	github.com/filecoin-project/go-state-types v0.1.1-0.20210810190654-139e0e79e69e
+	github.com/filecoin-project/go-state-types v0.1.7
 	github.com/filecoin-project/specs-actors v0.9.13
 	github.com/filecoin-project/specs-actors/v2 v2.3.6
 	github.com/filecoin-project/specs-actors/v3 v3.1.2
